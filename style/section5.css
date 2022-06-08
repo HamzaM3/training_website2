@@ -1,0 +1,72 @@
+#section5 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 40rem;
+    grid-gap: 4rem;
+}
+
+#section5 > :nth-child(1) {
+    background-image: url("../img/bridge.jpeg");
+    background-size: cover;
+    background-position: bottom 0 left 0 ;
+}
+
+#section5 > :nth-child(2) {
+    padding-right: 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    justify-content: center;
+}
+
+#quote-svg {
+    width: 12ch;
+}
+
+#section5 > :nth-child(2) > div {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    justify-content: center;
+    max-width: calc(14/16 * 80ch);;
+}
+
+
+/* Taking care of arrows */
+
+#section5 svg:not(#quote-svg) {
+    fill : unset;
+    width: 3ch;
+    position:absolute;
+}
+
+#section5 > :nth-child(2) {
+    position: relative;
+}
+
+#section5 svg:nth-of-type(1) {
+    left: -3.5em;
+}
+
+#section5 svg:nth-of-type(3) {
+    right: .5em;
+}
+
+@media all and (max-width: 700px) {
+    #section5 {
+        grid-template-columns: 1fr;
+        grid-template-rows: 40rem;
+    }
+
+    #section5 > :nth-child(2) {
+        padding: 4em;
+    }
+
+    #section5 svg:nth-of-type(1) {
+        left: .5em;
+    }
+    
+    #section5 svg:nth-of-type(3) {
+        right: .5em;
+    }
+}

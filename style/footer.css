@@ -1,0 +1,14 @@
+footer {
+    background-color: #222;
+    color: #CCC;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+footer a, footer a:visited {
+    color: #dfa89a;
+}
+
+footer p {
+    font-size: 16px;
+}

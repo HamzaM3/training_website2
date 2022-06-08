@@ -1,0 +1,37 @@
+#section2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 500px;
+}
+
+#section2 > * {
+    background-size: cover;
+    background-position: center;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+#section2 .left {
+    background:  linear-gradient(to right, rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)),  url("../img/black_car.jpeg") ;
+    justify-content: end;
+    padding-bottom:5em;
+}
+
+
+#section2 .middle {
+    background:  linear-gradient(to right, rgba(200,185,238, .5), rgba(200,185,238, .5)),  url("../img/purple_port.jpeg") ;
+    justify-content: end;
+}
+
+#section2 .right {
+    background:  linear-gradient(to right, rgba(255, 81, 38, .5), rgba(255, 81, 38, .5)),  url("../img/ship_sea.jpeg") ;
+}
+
+@media all and (max-width: 700px) {
+    #section2 {
+        grid-template-columns: 1fr;
+        grid-template-rows: 500px 500px 500px;
+    }
+}

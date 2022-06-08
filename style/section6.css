@@ -1,0 +1,29 @@
+#section6 {
+    padding-top : 1.5rem;
+    padding-bottom: 1.5rem;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: space-around;
+    gap: 10ch;
+
+    background-color: #f2f2f2;
+}
+
+#section6 img {
+    flex: 1;
+
+    object-fit: contain;
+    overflow: hidden; /* It's the solution */
+}
+
+@media all and (max-width: 700px) {
+    #section6 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #section6 img {
+        width: 25%;
+    }
+}

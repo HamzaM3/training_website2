@@ -1,0 +1,40 @@
+#section9 {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 3rem;
+}
+
+#section9 .left {
+    background-image: url("../img/plane.jpeg");
+    background-size: cover;
+}
+
+#section9 .right {
+    max-width: 25rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap:1rem;
+
+    padding: 4rem 0 3rem 0;
+}
+
+#section9 .right h2 {
+    font-size: calc(48/16 * 1rem);
+}
+
+@media all and (max-width: 700px) {
+    #section9 {
+        grid-template-columns: 1fr;
+    }
+
+    #section9 .left {
+        height: 500px;
+    }
+
+    #section9 .right {
+        padding: 1rem 0 1rem 0;
+    }
+}

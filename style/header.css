@@ -1,0 +1,15 @@
+#header {
+    background-image: url('../img/header_pic.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 750px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    gap: 1rem;
+}
+
+#header h1 {
+    text-transform: capitalize;
+}
